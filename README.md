@@ -1,5 +1,5 @@
 # E-Portfolio Docusaurus
-![Docusaurus](/E_Portfolio_Docusaurus/main/Images/docusaurus-soc.png?raw=true "Docusaurus")
+![Docusaurus](/Images/docusaurus-soc.png?raw=true "Docusaurus")
 This repository is part of my E-Portfolio from the course Software Engineering 2022 at DHBW Karlsruhe.
 
 ## Tabel of Content
