@@ -1,7 +1,7 @@
 # E-Portfolio Docusaurus
 ![Docusaurus](/Images/docusaurus-dark-background.png?raw=true "Docusaurus")
 
-This repository is part of my E-Portfolio for the Software Engineering 2022 course at DHBW Karlsruhe.
+This repository is part of my E-Portfolio for the Software Engineering 2022 course at DHBW Karlsruhe. The slides of the presentation and the demo code can be found in the respective folders in this repository.
 
 ## Table of Content
 
@@ -9,7 +9,10 @@ This repository is part of my E-Portfolio for the Software Engineering 2022 cour
 2.  [Docusaurus](#docusaurus)
 3.  [Virtues](#virtues) 
 3.  [Quickstart](#quick)    
-4.  [Getting Started](#getting)
+4.  [Getting Started](#getting) 
+    1. [Requirements](#req)
+    2. [Project Structure](#structure)
+    3. [Build](#build)
 
 <a name="introduction"></a>
 
@@ -58,3 +61,74 @@ Alternatively, the code can be tried out [directly](https://stackblitz.com/githu
 <a name="getting"></a>
 
 ## Getting Started
+In the following section, the configuration of Docusaurus will be explained.
+<a name="req"></a>
+
+### 1. Requirements
+A [Node.js](https://nodejs.org/en/download/) version higher or equal 14 is necessary. This can be checked with: 
+```bash 
+node -v
+```
+In case Node will be installed, it is recommended to select all checkboxes related to dependencies.
+It is easy to structure a framing Docusaurus website with the command line. You can run the command anywhere in a new empty repository or within an existing repository. It will assemble a new directory containing the structured files.
+```bash 
+npx create-docusaurus@latest [name] [template]
+```
+For example:
+```bash 
+npx create-docusaurus@latest website classic
+```
+The classic template includes standard documentation, a blog, custom pages, and a CSS framework (with dark mode support). It can get up and running extremely quickly with the classic template.
+<a name="structure"></a>
+
+### 2. Project Structure
+After the configuration, it is now time to move on to the structure.
+In the new directory follwing files will appear:
+
+```bash 
+my-website
+├── blog
+│   ├── 2019-05-28-hola.md
+│   ├── 2019-05-29-hello-world.md
+│   └── 2020-05-30-welcome.md
+├── docs
+│   ├── doc1.md
+│   ├── doc2.md
+│   ├── doc3.md
+│   └── mdx.md
+├── src
+│   ├── css
+│   │   └── custom.css
+│   └── pages
+│       ├── styles.module.css
+│       └── index.js
+├── static
+│   └── img
+├── docusaurus.config.js
+├── package.json
+├── README.md
+├── sidebars.js
+└── yarn.lock
+```
+
+- /blog/ - Contains the blog Markdown files. More about blogs [here](https://docusaurus.io/docs/blog)
+- /docs/ - Contains the Markdown files for the docs. Additional information can be found [here](https://docusaurus.io/docs/docs-markdown-features)
+- /src/ - Non-documentation files like pages or custom React components. 
+- /docusaurus.config.js - A config file containing the site configuration. 
+- /package.json - A Docusaurus website is a React app, meaning any npm packages can be installed.
+
+<a name="build"></a>
+
+### 3. Build
+A local development server that will serve the website and reflect the latest changes can be started to preview the changes after editing files.
+```bash  
+cd my-website
+npm run start
+```
+By default, a browser window will open at http://localhost:3000.
+
+To build the website the following command is necessary:
+```bash  
+npm run build
+```
+So much for the configuration 🦖
