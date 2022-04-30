@@ -2,7 +2,7 @@
 ![Docusaurus](/Images/docusaurus-dark-background.png?raw=true "Docusaurus")
 
 This repository is part of my E-Portfolio for the Software Engineering 2022 course at DHBW Karlsruhe. The slides of the presentation and the demo code can be found in the respective folders in this repository. 
-If you want to participate during the demo, feel free to follow the steps under "Get Started" in advance :)
+If you want to participate during the demo, feel free to follow the steps under "Getting Started" in advance :)
 
 ## Table of Content
 
