@@ -1,7 +1,8 @@
 # E-Portfolio Docusaurus
 ![Docusaurus](/Images/docusaurus-dark-background.png?raw=true "Docusaurus")
 
-This repository is part of my E-Portfolio for the Software Engineering 2022 course at DHBW Karlsruhe. The slides of the presentation and the demo code can be found in the respective folders in this repository.
+This repository is part of my E-Portfolio for the Software Engineering 2022 course at DHBW Karlsruhe. The slides of the presentation and the demo code can be found in the respective folders in this repository. 
+If you want to participate during the demo, feel free to follow the steps under "Get Started" in advance :)
 
 ## Table of Content
 
@@ -120,15 +121,13 @@ my-website
 <a name="build"></a>
 
 ### 3. Build
-A local development server that will serve the website and reflect the latest changes can be started to preview the changes after editing files.
+
+A local development server that will serve the website and reflect the latest changes can be started to preview the changes after editing files:
+
 ```bash  
-cd my-website
+cd website
 npm run start
 ```
 By default, a browser window will open at http://localhost:3000.
 
-To build the website the following command is necessary:
-```bash  
-npm run build
-```
 So much for the configuration 🦖
